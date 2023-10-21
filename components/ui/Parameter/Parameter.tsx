@@ -4,14 +4,14 @@ import { Card, CardContent, CardFooter,  } from '../card';
 import parameterData from '../constant/ParameterData'
 
 const Parameter = () => (
-  <div className=''>
+  <div className='max-w-2xl'>
   {parameterData.map((parameter, index) => (
-    <div  key={index} className="flex  #171a21 bg-[#171a21] shadow-xl text-white justify-evenly items-center border-b border-dotted pt-6">
+    <div  key={index} className="flex  #171a21 bg-[#171a21] shadow-xl text-white justify-items-start items-center border-b border-dotted pt-6">
       <CardContent className="flex  items-center space-x-2 ">
         <h3>{parameter.title}</h3>
         <h3 className='text-green-500'>{parameter.value}</h3>
       </CardContent>
-      <CardFooter >{parameter.description}</CardFooter>
+      <CardFooter className='flex-start'>{parameter.description}</CardFooter>
 
     </div>
   ))}
