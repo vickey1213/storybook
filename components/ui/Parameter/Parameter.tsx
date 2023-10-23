@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardFooter,  } from '../card';
 
 import parameterData from '../constant/ParameterData'
-import { ScrollArea }  from  '../scroll-area';
+
 const Parameter = () => (
  
    <div className='max-w-2xl'>

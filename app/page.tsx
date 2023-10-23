@@ -1,4 +1,4 @@
-"use client";
+
 
 import Parameter from "@/components/ui/Parameter/Parameter";
 import Header from "@/components/ui/Header";
