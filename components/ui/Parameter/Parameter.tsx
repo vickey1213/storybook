@@ -10,11 +10,11 @@ const Parameter = () => (
         key={index}
         className="flex bg-[#171a21] shadow-xl text-white justify-items-start items-center border-b-[0.15px] border-gray-700"
       >
-        <CardContent className="flex gap-2 w-[30%] sm:w-[10%]">
+        <CardContent className="flex gap-2 w-[30%]">
           <h3>{parameter.title}</h3>
           <h3 className="text-green-500">{parameter.value}</h3>
         </CardContent>
-        <CardContent className="w-[70%] sm:w-[90%] flex items-start">
+        <CardContent className="w-[70%] flex items-start">
           {parameter.description}
         </CardContent>
       </Card>
