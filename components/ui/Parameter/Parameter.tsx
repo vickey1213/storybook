@@ -2,9 +2,10 @@ import React from 'react';
 import { Card, CardContent, CardFooter,  } from '../card';
 
 import parameterData from '../constant/ParameterData'
-
+import { ScrollArea }  from  '../scroll-area';
 const Parameter = () => (
-  <div className='max-w-2xl'>
+ 
+   <div className='max-w-2xl'>
   {parameterData.map((parameter, index) => (
     <div  key={index} className="flex  #171a21 bg-[#171a21] shadow-xl text-white justify-items-start items-center border-b border-dotted pt-6">
       <CardContent className="flex  items-center space-x-2 ">
@@ -16,6 +17,7 @@ const Parameter = () => (
     </div>
   ))}
 </div>
+
 
 );
 

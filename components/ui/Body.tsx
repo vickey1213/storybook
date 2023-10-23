@@ -1,8 +1,10 @@
 import React from 'react'
+import { ScrollArea }  from  './scroll-area';
 
 const Body = () => {
   return (
-    <div>
+    <ScrollArea  className='h-96 max-w-2xl rounded-md border'>
+      <div className='p-4'>
         <p className='text-white'>Two-dimensional, size-mutable, potentially heterogeneous tabular data.</p>
         <p className='text-white'>Data structure also contains labeled axes (rows and columns). <br/>
 Arithmetic operations align on both row and column labels. Can be <br/>
@@ -54,8 +56,28 @@ read_clipboard : Read text from clipboard into DataFrame.</p>
 ----- <br/>
 Please reference the :ref:`User Guide basics.dataframe` for more information.</p>
 
+<p className='text-white'>Examples
+--------
+Constructing DataFrame from a dictionary.
+
+>>> d = {'col1': [1, 2], 'col2': [3, 4]} 
+>>> df = pd.DataFrame(data=d)
+>>> df
+   col1  col2
+0     1     3
+1     2     4
+
+Notice that the inferred dtype is int64.
+
+>>> df.dtypes
+col1    int64
+col2    int64
+dtype: object
+</p>
+
 
     </div>
+    </ScrollArea>
   )
 }
 
