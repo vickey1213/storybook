@@ -1,6 +1,6 @@
 import React from "react";
-
 import ScrollArea from "./scroll-area";
+import { ScrollBar } from "./scroll-area";
 
 const Body = () => {
   return (
@@ -173,6 +173,7 @@ Constructing DataFrame from dataclass:
       `}
         </pre>
       </div>
+      <ScrollBar orientation="horizontal" />
     </ScrollArea>
   );
 };
